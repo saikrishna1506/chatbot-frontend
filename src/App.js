@@ -91,8 +91,8 @@ const App = () => {
       const data = await response.json();
 
       const isLink =
-        data.response.includes("http") &&
-        (data.response.endsWith(".pdf") || data.response.endsWith(".docx"));
+        data.response.includes("https") &&
+        (data.response.endsWith(".pdf") || data.response.endsWith(".docx")||data.response.endsWith(""));
 
       setMessages((prev) => [
         ...prev,
